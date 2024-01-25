@@ -20,10 +20,12 @@ const students = [
     secondNote: 2,
     },
 ]
+function calculate(notes){
+    average = ((notes.firstNote + notes.secondNote) / 2).toFixed(1)
+}
 for(let student of students){
     let name = student.name
-    console.log(student.name)
-    average = ((student.firstNote + student.secondNote) / 2).toFixed(1)
+    calculate(student)
     if(average >= 7){
         alert(`A média do(a) aluno(a) ${name} é ${average} \n Parabéns, ${name}! Você foi aprovado(a) no concurso!`)
     }
